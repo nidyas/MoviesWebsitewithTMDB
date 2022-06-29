@@ -43,7 +43,7 @@ export default function SimpleBottomNavigation() {
 
   return (
     <BottomNavigation 
-    style={{'background-color':'black'}}
+    style={{backgroundColor:'black'}}
     value={value}
     onChange={(event, newValue) => {
       setValue(newValue);
@@ -67,11 +67,7 @@ export default function SimpleBottomNavigation() {
       label="TV Series"
       icon={<TvIcon />}
     />
-    <BottomNavigationAction
-      style={{ color: "white" }}
-      label="Search"
-      icon={<SearchIcon />}
-    />
+
   </BottomNavigation>
   );
 }

@@ -5,39 +5,22 @@
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    background: linear-gradient(54deg, #14575e, #334a86);
+    background: black;
     background-size: 400% 400%;
 
-    -webkit-animation: AnimationName 9s ease infinite;
-    -moz-animation: AnimationName 9s ease infinite;
-    animation: AnimationName 9s ease infinite;
+
     font-family: "Montserrat", sans-serif;
     font-size: 5vw;
     padding-bottom: 15px;
-    box-shadow: 0px 1px 5px black;
+    box-shadow: 0px 1px 5px #ffffff;
     color: white;
     z-index: 100;
   }
   
-  
-  @media (max-width: 1000px) {
-    .header {
-      padding-top: 15px;
-      font-size: 6.4vw;
-    }
-  }
-  @-webkit-keyframes AnimationName {
-    0%{background-position:0% 81%}
-    50%{background-position:100% 20%}
-    100%{background-position:0% 81%}
-  }
-  @-moz-keyframes AnimationName {
-    0%{background-position:0% 81%}
-    50%{background-position:100% 20%}
-    100%{background-position:0% 81%}
-  }
-  @keyframes AnimationName {
-    0%{background-position:0% 81%}
-    50%{background-position:100% 20%}
-    100%{background-position:0% 81%}
-  }
+.searchIC{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: -40px;
+    margin-top:-2.6rem;
+    height: 35px;
+}

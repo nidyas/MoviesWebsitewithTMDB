@@ -1,10 +1,29 @@
-import React from 'react'
+import {
+    Button,
+        createMuiTheme,
+        Tab,
+        Tabs,
+        TextField,
+        ThemeProvider,
+} from "@material-ui/core";
+import SearchIcon from "@material-ui/icons/Search";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import CustomPagination from "../../components/Pagination/CustomPagination";
+import SingleContent from "../../components/SingleContent/SingleContent";
+import './Search.css'
+const Search = () => {
 
-function Search() {
+
     return (
-        <div>Search</div>
 
-    )
-}
 
-export default Search
+
+            <div className="Search">
+             <input/>
+            </div>
+
+
+    );
+};
+export default Search;
