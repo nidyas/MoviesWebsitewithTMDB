@@ -47,25 +47,25 @@ export default function TransitionsModal({ children, media_type, id }) {
 
   const fetchData = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${media_type}/${id}?api_key=be465489dca09c43c78aa0007a20bf5b&language=en-US`
+      `https://api.themoviedb.org/3/${media_type}/${id}?api_key=be465489dca09c43c78aa0007a20bf5b`
     );
 
     setContent(data);
-    // console.log(data);
+    console.log(media_type);
   };
 
   const fetchVideo = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${media_type}/${id}/videos?api_key=be465489dca09c43c78aa0007a20bf5b&language=en-US`
+      `https://api.themoviedb.org/3/${media_type}/${id}/videos?api_key=be465489dca09c43c78aa0007a20bf5b`
     );
 
     setVideo(data.results[0]?.key);
+    console.log(data.results[0]?.key);
   };
 
   useEffect(() => {
     fetchData();
     fetchVideo();
-    // eslint-disable-next-line
   }, []);
 
   return (
