@@ -18,9 +18,12 @@
   }
   
 .searchIC{
+
     display: flex;
     justify-content:flex-end;
     margin-right: -40px;
-    margin-top:-2.6rem;
+    margin-top:-2.7rem;
+    border-radius: 20px;
     height: 35px;
 }
+

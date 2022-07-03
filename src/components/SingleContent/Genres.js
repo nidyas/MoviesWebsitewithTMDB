@@ -52,7 +52,9 @@ const Genres = ({
                     flexDirection:'row',
                     marginTop:'2rem',
                     marginBottom:'1rem',
-                    padding:'6px'
+                    padding:'6px',
+                    fontFamily:"serif"
+
                         }}>
         {selectedGenres.map((genre) => (
                 <Chip

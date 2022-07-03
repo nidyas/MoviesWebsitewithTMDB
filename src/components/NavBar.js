@@ -12,7 +12,10 @@ import WhatshotIcon from "@material-ui/icons/Whatshot";
 import TvIcon from "@material-ui/icons/Tv";
 import { useNavigate } from "react-router-dom";
 import { NavigateBefore } from '@material-ui/icons';
-
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 const useStyles=makeStyles({
     root:{
       width:500,
@@ -42,8 +45,9 @@ export default function SimpleBottomNavigation() {
 
 
   return (
+    <>
     <BottomNavigation 
-    style={{backgroundColor:'black'}}
+    style={{  background:" linear-gradient(54deg, #196a7e, #205579)"}}
     value={value}
     onChange={(event, newValue) => {
       setValue(newValue);
@@ -53,12 +57,12 @@ export default function SimpleBottomNavigation() {
 
   >
     <BottomNavigationAction
-      style={{ color: "white" }}
+      style={{ color: "orange" }}
       label="Trending"
       icon={<WhatshotIcon />}
     />
     <BottomNavigationAction
-      style={{ color: "white" }}
+      style={{ color: "black" }}
       label="Movies"
       icon={<MovieIcon />}
     />
@@ -67,7 +71,44 @@ export default function SimpleBottomNavigation() {
       label="TV Series"
       icon={<TvIcon />}
     />
+      <BottomNavigationAction
+      style={{ color: "red" }}
+      label="TV Series"
+      icon={<FavoriteIcon />}
+    />
 
   </BottomNavigation>
+  <div className='test'style={{
+      display:'flex',
+      backgroundColor:"black",
+      color:"white"
+      
+               }} >
+  <div className='SocialList' style={{
+      display:'flex',
+      backgroundColor:"black",
+      color:"white"
+      
+               }}>
+          <ul class="socials"  >
+            <a href="https://www.facebook.com/yayadi2" ><FacebookIcon style={{color:"	white"}} ></FacebookIcon></a>
+            <a href="https://github.com/nidyas"><GitHubIcon style={{color:"white"}}></GitHubIcon> </a>
+            <a href="https://www.linkedin.com/in/yassine-ayadi-b5126a220/"><LinkedInIcon style={{ color:"white"}}></LinkedInIcon></a>
+            <a href="https://twitter.com/JRssjtrunksJR"><TwitterIcon style={{color:"white"}}></TwitterIcon></a>
+          </ul>
+      </div>
+   
+      <div class="footer-bottom" style={{
+        marginLeft:"100rem",
+        backgroundColor:"black",
+        fontFamily:"sans-serif",
+        color:"white",
+   
+      }}>
+          <p>Copyright&copy;2022  by <span>Unknown.EXE</span></p>
+      </div>
+      </div>
+      
+  </>
   );
 }

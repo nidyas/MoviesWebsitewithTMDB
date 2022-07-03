@@ -19,8 +19,8 @@ const Search = () => {
 
 
 
-            <div className="Search">
-             <input/>
+            <div className="">
+             ComingSoon
             </div>
 
 
