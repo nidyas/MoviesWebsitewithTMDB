@@ -5,7 +5,7 @@ import {TextField} from "@mui/material";
 import axios from "axios";
 import SearchIcon from "@material-ui/icons/Search";
 import SingleContent from "./SingleContent/SingleContent";
-
+import img1 from "../img/img.PNG"
 function SearchH(props) {
     const [type, setType] = useState(0);
     const [searchText, setSearchText] = useState("");
@@ -37,18 +37,24 @@ function SearchH(props) {
 
     return (
         <>
-        <div className="header  ">
-            <img src="" className="img"></img>
-            <div className="SearchBar">
+
+        <div className="header ">
+        
+            
                 
-                <input type="text" placeholder="Search for Movies " className="bar" style={{width: 500 ,height:30, borderRadius: "20    px"}}
+             <img src={img1} className="img"></img>
+        
+                <input type="text" placeholder="Search for Movies " className="bar" 
+                style={{width: 800 ,height:50, borderRadius: "20    px",marginTop:"2rem"}}
                        onChange={(e) => setSearchText(e.target.value) } 
                 ></input>
 
            <div className="searchIC"><button onClick={fetchSearch}> <SearchIcon /></button> </div>
+           
             </div>
+            
 
-        </div>
+   
 
         </>
 

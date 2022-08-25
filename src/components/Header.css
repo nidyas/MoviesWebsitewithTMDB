@@ -1,16 +1,16 @@
 .header {
     width: 100%;
     cursor: pointer;
-    position: fixed;
-    display: flex;
+    position: absolute;
+    display:flex;
+    flex-direction: row;
     justify-content: center;
     text-transform: uppercase;
     background: black;
     background-size: 400% 400%;
-
-
+ 
     font-family: "Montserrat", sans-serif;
-    font-size: 5vw;
+    font-size: 10vw;
     padding-bottom: 15px;
     box-shadow: 0px 1px 5px #ffffff;
     color: white;
@@ -21,9 +21,18 @@
 
     display: flex;
     justify-content:flex-end;
-    margin-right: -40px;
-    margin-top:-2.7rem;
     border-radius: 20px;
-    height: 35px;
+    margin-top:2rem;
+    height: 55px;
 }
 
+.img{
+
+  display: flex;
+  height: 100px;
+  width: 100px;
+  margin-right:5rem ;
+  background: black;
+  justify-content: flex-start;
+  margin-left: -5rem;
+}

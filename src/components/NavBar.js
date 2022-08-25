@@ -105,7 +105,7 @@ export default function SimpleBottomNavigation() {
         color:"white",
    
       }}>
-          <p>Copyright&copy;2022  by <span>Unknown.EXE</span></p>
+          <p>Copyright&copy; 2022  by <span>Unknown.EXE</span></p>
       </div>
       </div>
       
